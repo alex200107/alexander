@@ -1,0 +1,75 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #A01CAA;
+  --primary-color-font: #2699FB;
+  --size-font-body: 15px;
+  --title-color-font: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color-font);
+  font-size: var(--size-font-body);
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--title-color-font);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.header-site {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.banner-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border: 1px dashed var(--primary-color);
+}
+
+.banner-home__price {
+  font-size: 4em;
+  flex-shrink: 2;
+}
+
+.banner-home__text {
+  max-width: 75%;
+  font-size: 1.1em;
+}
+
+.home-services{
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.image-service {
+  border-radius: 1em;
+}
+
+.responsive-image img{
+  width: 100%;
+  vertical-align: top;
+  border-radius: 1em;
+}
+
+.home-services__card p{
+  padding: 1rem 0;
+}

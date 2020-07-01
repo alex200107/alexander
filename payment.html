@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles/reset.css" rel="stylesheet">
+  <link href="styles/payment.css" rel="stylesheet">
+  <title>Pago</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header-site">
+      <h1>Pago</h1>
+      <span class="caption">Escoja un método de pago</span>
+    </header>
+    <main>
+      <div class="payment-options">
+        <div class="responsive-image payment_type">
+          <img src="https://thestrawgroup.com/wp-content/uploads/2018/01/logobar-google-pay.png" alt="Tarjeta D/C">
+        </div>
+        <div class="responsive-image payment_type">
+          <img src="https://thestrawgroup.com/wp-content/uploads/2018/01/logobar-google-pay.png" alt="Tarjeta D/C">
+        </div>
+        <div class="responsive-image payment_type">
+          <img src="https://thestrawgroup.com/wp-content/uploads/2018/01/logobar-google-pay.png" alt="Tarjeta D/C">
+        </div>
+      </div>
+      <section class="payment-section">
+        <form action="" class="payment-form">
+          <div class="payment-form__billing">
+            <h3>Información de facturación</h3>
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Nombre completo" />
+            <label>Dirección</label>
+            <input type="text" placeholder="Dirección" />
+            <div class="payment-form__city">
+              <div class="payment-form__item-city">
+                <label>Ciudad</label>
+                <input type="text" placeholder="Ciudad" />
+              </div>
+              <div class="payment-form__item-city">
+                <label>Código postal</label>
+                <input type="text" placeholder="Código postal" />
+              </div>
+            </div>
+            <label>País</label>
+            <select>
+              <option value="EU">Estados Unidos</option>
+              <option value="PE">Perú</option>
+              <option value="CH">Chile</option>
+            </select>
+          </div>
+          <div class="payment-form__credit-card">
+            <h3>Información tarjeta de crédito</h3>
+            <label>Nombre de Tarjeta</label>
+            <input type="text" placeholder="1111-1111-1111-1111" />
+            <label>Titular de la tarjeta</label>
+            <input type="text" placeholder="Titular de la tarjeta" />
+            <label>Fecha de expiración</label>
+            <input type="date" min="2020-01-01" max="2026-12-31">
+            <label>CVV</label>
+            <input type="text" placeholder="123" class="input-cvv">
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
